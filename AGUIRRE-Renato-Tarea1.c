@@ -4,12 +4,11 @@
 #include <string.h>
 int get_number_type(char number[], int number_size)
 {
-    // retorna si el numero es Entero (0), decimal (1), o rut(2) o salir un numero
-    para salir del programa(3) for (int i = 1; i < number_size; i++)
-    { // empieza en el indice 1 para q no tope con
-        el - de un menos de un entero.
+    // retorna si el numero es Entero (0), decimal (1), o rut(2) o salir del programa(3) }
+    for (int i = 1; i < number_size; i++)
+    { // empieza en el indice 1 para q no tope con el - de un menos de un entero.
              // char character = number[i];
-             if (number[i] == '-')
+        if (number[i] == '-')
         {
             return 2;
         }
@@ -21,8 +20,8 @@ int get_number_type(char number[], int number_size)
         {
             return 3;
         }
-    } // cuando sale del for, si no ha topado con un guion o ., siginifca q es
-    entero return 0;
+    } // cuando sale del for, si no ha topado con un guion o ., siginifca q esentero 
+    return 0;
 }
 int whole_to_int(char *word, char *input)
 {
@@ -214,8 +213,8 @@ void int_to_word(char *word, int number)
 }
 void decimal_to_word(char *word, char *number)
 {
-    // recibimos la palabra para partirla en dos enteros, que luego seran llevados
-    a la palabra final int decimal_or_int = 0; // decimal = 1 int = 0
+    // recibimos la palabra para partirla en dos enteros, que luego seran llevadosa la palabra final 
+    int decimal_or_int = 0; // decimal = 1 int = 0
     char decimal[30] = "";
     char integer[30] = "";
     int number_length = (int)strlen(number);
@@ -276,7 +275,7 @@ void rut_to_word(char *word, char *rut)
     // logica del verificador
     char units[][20] = { "", "uno ", "dos ", "tres ", "cuatro ", "cinco ", "seis
                                                                            ", " siete ", " ocho ", " nueve "};
-                         strcat(word1, "raya ");
+    strcat(word1, "raya ");
     if (verificador == 'k')
     {
         strncat(word1, &verificador, 1);
